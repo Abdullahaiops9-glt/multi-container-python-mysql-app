@@ -27,21 +27,30 @@ Docker Compose manages both services together using YAML configuration.
 multi-container-python-mysql-app/
 
 ├── app.py
+
 ├── requirements.txt
+
 ├── Dockerfile
+
 ├── docker-compose.yml
+
 ├── commands.sh
+
 ├── README.md
 
 └── screenshots/
+    
     ├── 1-project-files.png
+    
     ├── 2-docker-compose-up.png
+    
     ├── 3-running-containers.png
+    
     ├── 4-browser-output.png
+    
     ├── 5-compose-logs.png
+    
     ├── 6-dcoker-scout scan.png
-    ├── 7-trivy scan 
-
 ---
 
 ## ⚙️  Technologies Used
@@ -60,11 +69,11 @@ multi-container-python-mysql-app/
 docker scout cves --only-severity high,critical multi-container-python-mysql-app-web:latest
 
 ```
-
 ## 🚀 Run Project
 
 ### Start Containers
-
+- docker-compose build
+- docker-scout-scan 
 - docker-compose up -d
 - Verify Containers
 - docker ps
@@ -72,7 +81,6 @@ docker scout cves --only-severity high,critical multi-container-python-mysql-app
 - docker-compose logs
 - Stop Containers
 - docker-compose down
-- docker-scout-scan
 
 ---
 
@@ -85,6 +93,7 @@ Multi Container App Running 🚀
 
 ## 📸 Screenshots
 - Project files
+- docker-scout-scan image 
 - Docker Compose startup
 - Running containers
 - Browser output
@@ -118,7 +127,7 @@ Multi Container App Running 🚀
 
 ## 🔗 Links
 
-Medium Article:
+Medium Article: 
 
 GitHub Repository: 
 

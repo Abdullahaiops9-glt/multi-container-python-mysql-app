@@ -9,6 +9,9 @@ docker-compose up -d
 echo "📊 Checking running containers..."
 docker ps
 
+echo "Scanning the Image for Checking Vulnerabilities"
+docker scout cves --only-severity high,critical multi-container-python-mysql-app-web:latest
+
 echo "📄 Viewing compose logs..."
 docker-compose logs
 
